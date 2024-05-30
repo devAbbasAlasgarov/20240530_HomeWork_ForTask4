@@ -21,6 +21,7 @@ namespace DoctorPatients
             Console.WriteLine($"Qəbul edilən xəstə sayı: {numberOfPatients}");
             Console.WriteLine($"Xəstələrə yazlılan toplam dərman sayı: {sumOfPills}");
             Console.WriteLine($"Xəstə başına düşən ortalama dərman sayı: {sumOfPills/numberOfPatients}");
+            Console.Read();
         }
     }
 }

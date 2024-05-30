@@ -14,6 +14,7 @@ namespace DoctorPatients
 
             for(int i = 0; i < numberOfPatients; i++)
             {
+                Console.Write($"Enter number of pills given to patient {i} : ");
                 numberOfPills = int.Parse(Console.ReadLine());
                 sumOfPills += numberOfPills;
             }

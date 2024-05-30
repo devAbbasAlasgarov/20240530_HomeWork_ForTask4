@@ -24,7 +24,7 @@ namespace DoctorPatients
                 numberOfPills = int.Parse(Console.ReadLine());
                 sumOfPills += numberOfPills;
             }
-            float averageNumberOfPills =  (float)sumOfPills / (float)numberOfPatients;
+            float averageNumberOfPills =  (float)sumOfPills / numberOfPatients;
             Console.WriteLine($"Qəbul edilən xəstə sayı: {numberOfPatients}");
             Console.WriteLine($"Xəstələrə yazlılan toplam dərman sayı: {sumOfPills}");
             Console.WriteLine($"Xəstə başına düşən ortalama dərman sayı: {averageNumberOfPills}");

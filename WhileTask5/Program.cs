@@ -18,12 +18,6 @@ namespace WhileTask5
             string replyForNextDoctor;
             int numberOfDoctors = 1;
 
-            /*
-            Console.WriteLine("WHAT IS DOCTOR'S NAME?");
-            nameOfDoctor = Console.ReadLine();
-            Console.WriteLine("WHAT IS DOCTOR'S PROFESSION?");
-            professionOfDoctor = Console.ReadLine();
-            */
             nameAndProfession(nameOfDoctor, professionOfDoctor); 
 
             while (nextDoctor == true)

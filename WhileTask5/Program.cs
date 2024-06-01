@@ -10,18 +10,21 @@ namespace WhileTask5
             Console.OutputEncoding = Encoding.UTF8;
             string resultOfBloodTest = "NORMAL";
             decimal priceOfDoctor = 90;
-            string professionOfDoctor;
-            string nameOfDoctor;
+            string professionOfDoctor="";
+            string nameOfDoctor="";
             decimal positiveResult = 0;
             decimal negativeResult = 0;
             Boolean nextDoctor = true;
             string replyForNextDoctor;
             int numberOfDoctors = 1;
 
+            /*
             Console.WriteLine("WHAT IS DOCTOR'S NAME?");
             nameOfDoctor = Console.ReadLine();
             Console.WriteLine("WHAT IS DOCTOR'S PROFESSION?");
             professionOfDoctor = Console.ReadLine();
+            */
+            nameAndProfession(nameOfDoctor, professionOfDoctor); 
 
             while (nextDoctor == true)
             {
@@ -43,10 +46,7 @@ namespace WhileTask5
                 if(replyForNextDoctor=="y")
                 {
                     nextDoctor = true;
-                    Console.WriteLine("WHAT IS NEXT DOCTOR'S NAME?");
-                    nameOfDoctor = Console.ReadLine();
-                    Console.WriteLine("WHAT IS DOCTOR'S PROFESSION?");
-                    professionOfDoctor = Console.ReadLine();
+                    nameAndProfession(nameOfDoctor, professionOfDoctor);
                 }
                 else
                 {
@@ -68,6 +68,14 @@ namespace WhileTask5
             {
                 Console.WriteLine("REJECTI0N!");
             }
+        }
+
+        public static void nameAndProfession(string nameOfDoctor, string professionOfDoctor)
+        {
+            Console.WriteLine("WHAT IS DOCTOR'S NAME?");
+            nameOfDoctor = Console.ReadLine();
+            Console.WriteLine("WHAT IS DOCTOR'S PROFESSION?");
+            professionOfDoctor = Console.ReadLine();
         }
 
         
